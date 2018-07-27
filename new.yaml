@@ -1,18 +1,14 @@
---- # yaml ..
-- hosts: node1.blr.com
-  remote_user: ansible
-  become: yes
-  become_method: sudo
-  connection: ssh
-  gather_facts: yes
+--- # first file ...
+ - hosts: boa
+   remote_user: ansible
+   become: yes
+   become_method: sudo
+   connection: ssh
+   gather_facts: yes
    vars:
       username: myuser
    tasks:
-    - name: install httpd
-	  yum:
-	    name: httpd
-            state: latest
-    - name: making service start
-	  service:
-	    name: httpd
-	    state: started
+    - name: Installing telnet on both hosts
+      yum:
+        name: telnet
+        state: latest
