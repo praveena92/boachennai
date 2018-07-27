@@ -1,10 +1,10 @@
 --- # yaml ..
 - hosts: slave
-   remote_user: praveena92
-   become: yes
-   become_method: sudo
-   connection: ssh
-   gather_facts: yes
+  remote_user: ansible
+  become: yes
+  become_method: sudo
+  connection: ssh
+  gather_facts: yes
    vars:
       username: myuser
    tasks:
