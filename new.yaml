@@ -1,6 +1,6 @@
 --- # yaml ..
 - hosts: slave
-   remote_user: ansible
+   remote_user: praveena92
    become: yes
    become_method: sudo
    connection: ssh
