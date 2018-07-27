@@ -1,5 +1,5 @@
 --- # yaml ..
-- hosts: slave
+- hosts: node1.blr.com
   remote_user: ansible
   become: yes
   become_method: sudo
